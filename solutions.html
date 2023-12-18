@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise Solutions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    #message {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+    .btn {
+      padding: 10px 20px;
+      background-color: #3498db;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-right: 10px;
+    }
+    .btn:hover {
+      background-color: #2980b9;
+    }
+    .solution-links {
+      display: none;
+      margin-top: 20px;
+    }
+    .solution-links a {
+      display: block;
+      margin-bottom: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Exercise Solutions</h1>
+  <p id="message">Solutions to Exercises will be displayed after you have submitted your solutions in the Whatsapp group.</p>
+  <button id="submitBtn" class="btn" onclick="showSolutions()">Submit Solutions</button>
+  <button id="displaySolutionsBtn" class="btn" onclick="displaySolutionLinks()">Display Solutions</button>
+  
+  <div class="solution-links" id="solutionLinks">
+    <a href="" target="_blank">Physics Week 1</a>
+    <a href="" target="_blank">Mathematics week 1</a>
+    <a href="" target="_blank">Physics Week 2</a>
+    <a href="" target="_blank">Mathematics week 2</a>
+    <!-- Add more solution links as needed -->
+  </div>
+</div>
+
+<script>
+    function showSolutions() {
+    window.location.href = 'https://chat.whatsapp.com/Byp1NlPOmFND3rC8qKqDRT';
+  };
+  
+
+  function displaySolutionLinks() {
+    var solutionLinks = document.getElementById('solutionLinks');
+    if (solutionLinks.style.display === 'none') {
+      solutionLinks.style.display = 'block';
+    } else {
+      solutionLinks.style.display = 'none';
+    }
+  }
+</script>
+
+</body>
+</html>
